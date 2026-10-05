@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daro y Anser S.A.C. | Frutas y Vegetales Congelados</title>
+  <meta name="description" content="Daro y Anser S.A.C. — producción, comercialización y exportación de frutas y vegetales congelados.">
+  <meta name="theme-color" content="#0c5f3d">
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <style>
+    :root{--green:#409435;--green2:#095334;--dark:#0c2130;--muted:#63706b;--cream:#f7f7f2;--orange:#FAB313;--line:#e7ece9;--shadow:0 18px 60px rgba(10,50,32,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.55}
+    img{max-width:100%;display:block} a{text-decoration:none;color:inherit} .container{width:min(1140px,calc(100% - 38px));margin:auto}
+    .topbar{background:var(--dark);color:#dce9e3;font-size:13px}.topbar .container{display:flex;gap:24px;justify-content:flex-end;padding:8px 0;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(20,50,40,.08)}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo img{height:54px;width:auto}.menu{display:flex;gap:28px;align-items:center;font-weight:650;font-size:14px}.menu a{color:#29443a}.menu a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;font-weight:750;border:1px solid transparent;transition:.2s}.btn-primary{background:var(--green);color:#fff !important;box-shadow:0 9px 24px rgba(11,107,67,.23)}.btn-primary:hover{transform:translateY(-1px);background:#075b38}.btn-light{background:#fff;border-color:#dfe8e2;color:var(--green)}
+    .hero{overflow:hidden;background:linear-gradient(135deg,#f6fbf8 0%,#fff 52%,#fff6e7 100%)}.hero-grid{min-height:680px;display:grid;grid-template-columns:1.06fr .94fr;gap:58px;align-items:center;padding:62px 0 72px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:12px}.eyebrow:before{content:"";width:26px;height:3px;border-radius:9px;background:var(--orange)}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:14px 0 22px;letter-spacing:-.045em}.hero p{font-size:18px;color:#53665e;max-width:640px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-points{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;color:#486057;font-size:14px}.hero-points span{display:flex;align-items:center;gap:8px}.dot{width:9px;height:9px;border-radius:50%;background:var(--orange)}
+    .hero-card{position:relative}.hero-photo{height:520px;border-radius:34px;object-fit:cover;box-shadow:var(--shadow)}.float-card{position:absolute;left:-32px;bottom:28px;background:#fff;padding:18px 20px;border-radius:18px;box-shadow:0 16px 42px rgba(12,33,48,.16);width:220px}.float-card b{display:block;font-size:18px;color:var(--green)}.float-card small{color:#6f7d77}
+    section{padding:88px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:26px;margin-bottom:36px}.section-head h2{font-size:clamp(34px,4vw,50px);line-height:1.08;margin:9px 0 0;letter-spacing:-.035em}.section-head p{max-width:560px;color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}.about-visual{display:grid;grid-template-columns:1fr 1fr;gap:14px}.about-visual img{height:270px;width:100%;object-fit:cover;border-radius:24px}.about-visual img:first-child{grid-row:span 2;height:554px}.about-copy h2{font-size:44px;line-height:1.1;margin:12px 0 18px}.about-copy p{color:var(--muted)}.checklist{display:grid;gap:12px;margin:24px 0}.checklist div{display:flex;gap:10px;align-items:flex-start}.check{flex:0 0 24px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e5f5ed;color:var(--green);font-weight:900}
+    .products{background:var(--cream)}.tabs{display:flex;gap:8px;background:#fff;border:1px solid var(--line);padding:6px;border-radius:999px;width:max-content}.tab{border:0;background:transparent;padding:10px 18px;border-radius:999px;font-weight:800;cursor:pointer;color:#62756d}.tab.active{background:var(--green);color:#fff}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e7ece9;border-radius:22px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(16,58,39,.10)}.card img{height:215px;width:100%;object-fit:cover}.card-body{padding:18px}.card h3{margin:0 0 4px;font-size:19px}.card p{margin:0;color:#718079;font-size:13px}.product-list{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}.pill{padding:8px 12px;border:1px solid #dfe7e2;background:#fff;border-radius:999px;font-size:13px;font-weight:650;color:#486158}
+    .quality{position:relative;background:linear-gradient(115deg,#063d2a,#0d7650);color:#fff;overflow:hidden}.quality:after{content:"";position:absolute;width:500px;height:500px;border:110px solid rgba(255,255,255,.05);border-radius:50%;right:-120px;top:-180px}.quality-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center;position:relative;z-index:2}.quality h2{font-size:46px;line-height:1.08;margin:12px 0 20px}.quality p{color:#d7e8df}.quality-box{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:28px;padding:28px}.quality-box strong{display:block;font-size:22px;margin-bottom:10px}.quality-items{display:grid;gap:14px;margin-top:20px}.quality-item{display:flex;gap:12px}.quality-icon{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.13);display:grid;place-items:center;font-size:19px;flex:0 0 40px}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:42px}.contact-copy h2{font-size:46px;line-height:1.08;margin:12px 0 16px}.contact-copy p{color:var(--muted)}.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-card{padding:22px;border:1px solid var(--line);border-radius:20px;background:#fff}.contact-card span{display:block;color:#86938e;font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;margin-bottom:8px}.contact-card b{font-size:16px}.contact-card.full{grid-column:1/-1}.cta{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+    footer{background:#071c25;color:#b8c7c1;padding:34px 0}.footer-grid{display:flex;justify-content:space-between;gap:22px;align-items:center;flex-wrap:wrap}.footer-grid small{font-size:13px}.footer-brand{color:white;font-weight:800}
+    .mobile{display:none;border:0;background:#eef4f0;width:42px;height:42px;border-radius:12px;font-size:20px}
+    @media(max-width:950px){.menu{display:none;position:absolute;left:18px;right:18px;top:88px;background:#fff;padding:18px;border-radius:18px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}.menu.open{display:flex}.mobile{display:block}.hero-grid,.about-grid,.quality-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding-top:40px;min-height:auto}.hero-card{max-width:650px}.hero-photo{height:470px}.float-card{left:14px}.grid{grid-template-columns:repeat(2,1fr)}.about-copy{order:-1}.section-head{align-items:flex-start;flex-direction:column}.topbar{display:none}}
+    @media(max-width:600px){.container{width:min(100% - 26px,1140px)} nav{height:72px}.logo img{height:44px}.hero-grid{gap:34px;padding-bottom:54px}h1{font-size:44px}.hero-photo{height:380px;border-radius:24px}.float-card{width:190px;padding:14px}.grid{grid-template-columns:1fr}.card img{height:240px}.about-visual{grid-template-columns:1fr 1fr}.about-visual img,.about-visual img:first-child{height:220px;grid-row:auto}.about-visual img:first-child{grid-column:1/-1}.contact-cards{grid-template-columns:1fr}.contact-card.full{grid-column:auto}section{padding:66px 0}.about-copy h2,.quality h2,.contact-copy h2{font-size:36px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>📞 01 4050037</span><span>✉ rpena@daroyansersac.com</span></div></div>
+  <header>
+    <div class="container"><nav>
+      <a class="logo" href="#inicio"><img src="assets/img/logo.png" alt="Daro y Anser S.A.C."></a>
+      <button class="mobile" id="menuBtn" aria-label="Abrir menú">☰</button>
+      <div class="menu" id="menu"><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#calidad">Calidad</a><a href="#contacto">Contacto</a><a class="btn btn-primary" href="mailto:rpena@daroyansersac.com">Cotizar</a></div>
+    </nav></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Daro y Anser S.A.C.</span>
+          <h1>Frutas y vegetales congelados para mercados exigentes.</h1>
+          <p>Nos dedicamos a la producción, comercialización y exportación de vegetales y frutas, cuidando la calidad e inocuidad en cada etapa del proceso.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#productos">Ver productos</a><a class="btn btn-light" href="#contacto">Hablar con nosotros</a></div>
+          <div class="hero-points"><span><i class="dot"></i>Frutas congeladas</span><span><i class="dot"></i>Vegetales congelados</span><span><i class="dot"></i>Mejora continua</span></div>
+        </div>
+        <div class="hero-card">
+          <img class="hero-photo" src="assets/img/hero-frutas.jpg" alt="Frutas congeladas Daro y Anser">
+          <div class="float-card"><b>Calidad e inocuidad</b><small>Productos preparados para responder a estándares exigentes.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img src="assets/img/aji-amarillo-congelado.jpg" alt="Ají amarillo congelado">
+          <img src="assets/img/mango-congelado.jpg" alt="Mango congelado">
+          <img src="assets/img/fresa-congelada.jpg" alt="Fresa congelada">
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">Quiénes somos</span>
+          <h2>Producción y comercialización con enfoque en calidad.</h2>
+          <p>Daro y Anser S.A.C. trabaja con frutas y vegetales congelados en diferentes presentaciones, orientando sus procesos a la satisfacción del cliente y al cumplimiento de requisitos de calidad.</p>
+          <div class="checklist">
+            <div><span class="check">✓</span><span>Elaboración de alimentos inocuos.</span></div>
+            <div><span class="check">✓</span><span>Compromiso con la mejora continua.</span></div>
+            <div><span class="check">✓</span><span>Uso responsable de recursos y reducción del impacto ambiental.</span></div>
+          </div>
+          <a class="btn btn-primary" href="#calidad">Conocer nuestra política</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="productos">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Catálogo</span><h2>Nuestros productos</h2></div><p>Una selección de frutas, pulpas, tubérculos y ajíes congelados, disponibles en distintas presentaciones.</p></div>
+        <div class="tabs"><button class="tab active" data-target="frutas">Frutas</button><button class="tab" data-target="vegetales">Vegetales</button></div>
+
+        <div class="product-panel" id="frutas" style="margin-top:24px">
+          <div class="grid">
+            <article class="card"><img src="assets/img/mango-trozo-pulpa.jpg" alt="Mango"><div class="card-body"><h3>Mango</h3><p>Presentación: trozos y pulpa.</p></div></article>
+            <article class="card"><img src="assets/img/papaya-trozo-pulpa.jpg" alt="Papaya"><div class="card-body"><h3>Papaya</h3><p>Presentación: trozos y pulpa.</p></div></article>
+            <article class="card"><img src="assets/img/fresa-trozo-pulpa.jpg" alt="Fresa"><div class="card-body"><h3>Fresa</h3><p>Presentación: entera y pulpa.</p></div></article>
+            <article class="card"><img src="assets/img/maracuya-pulpa.jpg" alt="Maracuyá"><div class="card-body"><h3>Maracuyá</h3><p>Pulpa con o sin pepa.</p></div></article>
+          </div>
+          <div class="product-list"><span class="pill">Lúcuma</span><span class="pill">Chirimoya</span><span class="pill">Guanábana</span><span class="pill">Palta</span><span class="pill">Naranja</span><span class="pill">Limón</span><span class="pill">Tamarindo</span></div>
+        </div>
+
+        <div class="product-panel" id="vegetales" style="display:none;margin-top:24px">
+          <div class="grid">
+            <article class="card"><img src="assets/img/aji-amarillo.jpg" alt="Ají amarillo"><div class="card-body"><h3>Ají amarillo</h3><p>Entero o despepitado.</p></div></article>
+            <article class="card"><img src="assets/img/rocoto.jpg" alt="Rocoto"><div class="card-body"><h3>Rocoto</h3><p>Presentación: entero.</p></div></article>
+            <article class="card"><img src="assets/img/yuca.jpg" alt="Yuca amarilla"><div class="card-body"><h3>Yuca amarilla</h3><p>Trozos y/o bastones.</p></div></article>
+            <article class="card"><img src="assets/img/choclo.jpg" alt="Choclo"><div class="card-body"><h3>Choclo</h3><p>Granos o entero.</p></div></article>
+          </div>
+          <div class="product-list"><span class="pill">Ají limo</span><span class="pill">Papa amarilla</span><span class="pill">Camote</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quality" id="calidad">
+      <div class="container quality-grid">
+        <div>
+          <span class="eyebrow" style="color:#fff">Nuestra política de calidad</span>
+          <h2>Compromiso con clientes, procesos y mejora continua.</h2>
+          <p>Buscamos satisfacer los requerimientos de nuestros clientes mediante alimentos inocuos, el cumplimiento de estándares de calidad exigentes y la mejora continua del sistema.</p>
+        </div>
+        <div class="quality-box">
+          <strong>Principios que guían nuestro trabajo</strong>
+          <div class="quality-items">
+            <div class="quality-item"><div class="quality-icon">✓</div><div><b>Inocuidad</b><div>Control y cuidado durante la elaboración.</div></div></div>
+            <div class="quality-item"><div class="quality-icon">↗</div><div><b>Mejora continua</b><div>Procesos orientados a estándares internacionales.</div></div></div>
+            <div class="quality-item"><div class="quality-icon">♻</div><div><b>Responsabilidad ambiental</b><div>Uso correcto de recursos naturales y reducción del impacto ambiental.</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy"><span class="eyebrow">Contacto</span><h2>Conversemos sobre tu requerimiento.</h2><p>Para información comercial, presentaciones o cotizaciones, puedes comunicarte con Daro y Anser S.A.C. por teléfono o correo electrónico.</p><div class="cta"><a class="btn btn-primary" href="mailto:rpena@daroyansersac.com">Enviar correo</a><a class="btn btn-light" href="tel:+5114050037">Llamar ahora</a></div></div>
+        <div class="contact-cards">
+          <div class="contact-card"><span>Oficina</span><b>Jr. Pedro Mateo Gonzales Nro. 380 - Lima 07</b></div>
+          <div class="contact-card"><span>Fábrica</span><b>Buena Vista Km. 01 Lte. 8 PJ. Los Tilos - Huaral</b></div>
+          <div class="contact-card"><span>Teléfono</span><b>01 4050037</b></div>
+          <div class="contact-card"><span>Correo</span><b>rpena@daroyansersac.com</b></div>
+          <div class="contact-card full"><span>Sitio web</span><b>www.daroyansersac.com</b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-grid"><div><span class="footer-brand">Daro y Anser S.A.C.</span><br><small>Producción, comercialización y exportación de vegetales y frutas.</small></div><small>© <span id="year"></span> Daro y Anser S.A.C. Todos los derechos reservados.</small></div></footer>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const menuBtn=document.getElementById('menuBtn'),menu=document.getElementById('menu');
+    menuBtn.addEventListener('click',()=>menu.classList.toggle('open'));
+    menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+    document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+      document.querySelectorAll('.product-panel').forEach(p=>p.style.display='none');
+      document.getElementById(btn.dataset.target).style.display='block';
+    }));
+  </script>
+</body>
+</html>
